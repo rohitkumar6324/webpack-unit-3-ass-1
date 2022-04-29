@@ -52,20 +52,20 @@ const fetchRecipe = () => {
         });
     };
 
-    const getIngredients = (data) => {
-        let x = 1;
-        let arr = [];
-        while (data[`strIngredient${x}`] !== "") {
-            let y = [data[`strIngredient${x}`], data[`strMeasure${x}`]];
-            arr.push(y);
-            x++;
-        }
-        console.log(arr);
-        return arr;
-    };
 
 
 }
+const getIngredients = (data) => {
+    let x = 1;
+    let arr = [];
+    while (data[`strIngredient${x}`] !== "") {
+        let y = [data[`strIngredient${x}`], data[`strMeasure${x}`]];
+        arr.push(y);
+        x++;
+    }
+    console.log(arr);
+    return arr;
+};
 
 
-export { content, fetchRecipe };
+export { content, fetchRecipe, getIngredients };

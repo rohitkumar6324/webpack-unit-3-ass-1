@@ -1,5 +1,5 @@
 import navbar from "../components/navbar.js";
-import { content, fetchRecipe } from "../components/content"
+import { content, fetchRecipe, getIngredients } from "../components/content"
 import "../styles/style.css"
 const nav = document.getElementById("navbar");
 nav.innerHTML = navbar();
