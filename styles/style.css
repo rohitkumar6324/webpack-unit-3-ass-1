@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+body > * {
+  padding: 20px 7.5%;
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+  background-image: linear-gradient(#fee9e9, #ffffff);
+  /* background-size: 150px; */
+}
+#lhs {
+  display: flex;
+  align-items: flex-end;
+  height: fit-content;
+  gap: 20px;
+}
+#lhs > img {
+  height: 60px;
+}
+#company-title {
+  font-weight: bold;
+  font-size: 30px;
+}
+#rhs {
+  height: 60px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+#rhs button {
+  font-size: 18px;
+  background-color: #f54748;
+  border: none;
+  color: white;
+  height: 50px;
+  padding: 10px 35px;
+  border-radius: 25px;
+}
+
+#search {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+#query {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid grey;
+}
+#query:focus {
+  outline: none;
+}
+
+/* for main container */
+
+#main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#random {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#random-label {
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdecec;
+  color: #f54748;
+}
+#random-data {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: #f54748;
+  color: white;
+  border-radius: 20px;
+}
+
+#random-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 700px;
+}
+#random-img {
+  height: 400px;
+}
